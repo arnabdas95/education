@@ -70,7 +70,7 @@ body {
    }
   .project{
      
-      max-height: 190px;
+      max-height: 170px;
       width:100vw;
     
   }
@@ -130,10 +130,10 @@ body {
   color:#fff !important;
 }
 .about-image img{
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
   float: left;
-  
+  padding-top:8px;
   margin-right:10px;
   
 }
@@ -404,7 +404,12 @@ body {
 }
 
 
-
+@media screen and (max-width: 768px) {
+  .footer{
+    font-size: 12px;
+   
+  }
+}
 
 
 
