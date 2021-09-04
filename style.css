@@ -70,7 +70,7 @@ body {
    }
   .project{
      
-      max-height: 130px;
+      max-height: 145px;
       width:100vw;
     
   }
@@ -130,8 +130,8 @@ body {
   color:#fff !important;
 }
 .about-image img{
-  width:100px;
-  height:100px;
+  width:110px;
+  height:110px;
   float: left;
   padding-top:8px;
   margin-right:10px;
