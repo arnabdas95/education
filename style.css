@@ -22,10 +22,13 @@ body {
   background-size: cover;
 
 }
-.cover{
+
+
+/*css for home section */
+.home-container{
   
   padding-top:10px;
-  color: beige;
+  color: #fff;
   width:100vw;
   min-height: 20vw;
   display: flex;
@@ -34,7 +37,7 @@ body {
   font-size: 45px;
 }
 @media screen and (max-width: 768px) {
-  .cover{
+  .home-container{
     height:35vh;
     width:auto;
     font-size: 22px;
@@ -74,18 +77,364 @@ body {
    
 }
 
-.ontext{
-  
-  color:red;
-  position: absolute;
-  left: 50%;
-    transform: translate(-50%,-50%);
+.item1{
+  color:#fff !important;
+  position: relative;
+  overflow:auto;
+ 
 }
 
 
-#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
+
+
+.textonimage{
+  position: absolute;
+  top: 0%;
+  left:50%;
+  transform: translate(-50%,0%);
+  
+  
+}
+.textonimage2{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+ 
+}
+  
+  
+  
+.item1:hover{
+  transform: scale(1.02);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    
+  
+
+
+/*about section*/
+
+
+
+.about-container{
+  background: #2c2e4370;
+  color:beige;
+  margin:15px;
+  margin-top:100px;
+  padding:20px;
+
+}
+.about-container h1{
+  color:#fff !important;
+}
+.about-image img{
+  width:200px;
+  height:200px;
+  float: left;
+  
+  margin-right:10px;
+  
+}
+.about-content{
+  width:auto;
+ 
+}
+
+@media screen and (min-width: 769px) {
+.about-container{
+  width:65vw;
+  min-height: 340px;
+  position: relative;   
+  left: 50%;
+  transform: translate(-50%);
+ 
+}
+
+  .about-image img{
+    width:300px;
+    height:300px;
+}
+.about-content{
+ padding:15px;
+ 
+}
+}
+
+
+
+
+/*education*/
+
+
+.education-container{
+  margin-top:100px;
+  color:beige !important;
+  text-align: center;
+}
+.education-container h1{
+  color:#fff;
+}
+@media screen and (min-width: 769px) {
+  .education-container{
+    margin-left:20px;
   }
+  .container{
+    width:66vw !important; 
+   
+  
+  }
+}
+
+.card h3{color:#FFD523}
+.card{
+  background: #2c2e4370 !important;
+  color:beige;
+}
+.timeline {
+    border-left: 3px solid #FFD523;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #3032428a;
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #FFD523;
+    box-shadow: 0 0 0 3px #FFD523;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #727cf5;
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+
+/*end of education */
+
+
+
+/*project section */
+
+.project-container{
+  margin:20px;
+  margin-top:100px;
+  text-align: center;
+
+}
+.project-container h1{
+  color: #fff;
+}
+
+
+.project-container .text-muted{
+  color:#FFD523 !important;
+}
+@media screen and (min-width: 769px) {
+  .project-container{
+    padding-right:10px;
+      width:65vw !important; 
+      position: relative;   
+      left: 50%;
+      transform: translate(-50%);
+     
+
+  }
+}
+
+
+
+/*skills*/
+.skill-container{
+  background: #2c2e4370;
+  color:beige;
+  margin:15px;
+  margin-top:100px;
+  padding:20px;
+  margin-bottom: 100px;;
+}
+.skill-container h1,H2{
+  color:#fff;
+  text-align: center;
+}
+.accordion{
+  background: #2c2e4370 !important;
+  
+}
+.accordion-item .btn{
+  margin-top:5px !important;
+}
+.accordion button{
+  background: #8d92c270;
+  border:2px #fff;
+  color: #fff;
+}
+
+
+@media screen and (min-width: 769px) {
+  .skill-container{
+    width:65vw;
+    min-height: 340px;
+    position: relative;   
+    left: 50%;
+    transform: translate(-50%);
+   
+  }
+}
+
+
+
+
+
+
+
+.footer{
+  background-color:#020707;
+ 
+  width:100vw;
+  color:#FFD523;
+  text-align: center;
+  
+}
+.f {
+  color:#ffffff !important;
+  margin: 1px !important;
+  margin-top: 15px !important;
+  padding-bottom:0px !important;
+   
+   border:1px solid whitesmoke;
+   border-radius: 50%;
+}
+
+
+
+
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #FFD523; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */ 
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-radius: 30%; /* Rounded corners */
+
+}
+
+
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+@media screen and (max-width: 767px) {
+  #myBtn{
+    padding: 5px;
+    padding-left:7px;
+    padding-right:7px;
+  }
+}

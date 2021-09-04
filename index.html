@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="myscript.js"></script>
+    
   </head>
 
 <body class=bg-dark>
-      <nav class="navbar  navbar-dark bg-transparent fixed-top">
+  <div class="go-up"> <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></div>
+      <nav class="navbar  navbar-dark  fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand px-2" href="#">Arnab Das</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -21,41 +22,41 @@
 
           <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><p class= text-light>Hello </p></h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><p class= text-light></p> </p></h5>
               <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body ">
               <div class="text-center img-fluid ">
-                <img src="assets/profile-pic.jpg" class="test rounded-circle " alt="Arnab Das">
+                <img src="assets/profile-pic.jpg" class="test rounded-circle " alt="Arnab Das" style="border :4px solid;border-color: #ffd723c5; ">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
                     <li class="nav-item  d-flex justify-content-center">
-                      <a class="nav-link " aria-current="page" href="#"><p class="text-lg-center text-light mb-5"> ARNAB DAS</p></a>
+                      <a class="nav-link " aria-current="page" href="#"><p class="text-lg-center text-warning mb-5 " style="padding-left:15px;"> A R N A B </p></a>
                     </li>
                     </ul>
                 </div>
 
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 ">
                 <li class="nav-item  d-flex justify-content-center">
-                  <a class="nav-link " aria-current="page" href="#"><p class="text-lg-center text-white-50">SWEET HOME</p></a>
+                  <a class="nav-link " aria-current="page" href="#SEC-HOME"><p class="text-lg-center text-white-50">HOME</p></a>
                 </li>
                 <li class="nav-item  d-flex justify-content-center">
-                  <a class="nav-link" href="#"><p class="text-lg-center text-white-50">ABOUT MYSELF</p></a>
+                  <a class="nav-link" href="#SEC-ABOUT"><p class="text-lg-center text-white-50">ABOUT</p></a>
                 </li>   
                 <li class="nav-item  d-flex justify-content-center">
-                    <a class="nav-link" href="#"><p class="text-lg-center text-white-50">EDUCATIONS TILL NOW</p></a>
+                    <a class="nav-link" href="#SEC-EDUCATION"><p class="text-lg-center text-white-50">EDUCATIONS</p></a>
                   </li>   
                   <li class="nav-item  d-flex justify-content-center">
-                    <a class="nav-link" href="#"><p class="text-lg-center text-white-50">PERSONAL PROJECTS </p></a>
+                    <a class="nav-link" href="#SEC-PROJECT"><p class="text-lg-center text-white-50">PROJECTS</p></a>
                   </li>   
                 <li class="nav-item  d-flex justify-content-center">
-                    <a class="nav-link" href="#"><p class="text-lg-center text-white-50">PRESENT RESUME </p></a>
+                    <a class="nav-link" href="#SEC-SKILL"><p class="text-lg-center text-white-50">SKILLS</p></a>
                   </li>         
                   <li class="nav-item  d-flex justify-content-center ">
-                    <a class="nav-link" href="#"><p class="text-lg-center text-white-50">LET CONTACT</p></a>
+                    <a class="nav-link" href="#SEC-CONTACT"><p class="text-lg-center text-white-50">CONTACT</p></a>
                   </li>   
                   
                   <li class="nav-item  d-flex justify-content-center ">
-                    <ul class="nav d-flex justify-content-center navbar  data-bs-toggle  position-absolute bottom-0 end-0 w-100  "style="background-color:#3b3c3d;">
+                    <ul class="nav d-flex justify-content-center navbar  data-bs-toggle  position-absolute bottom-0 end-0 w-100  "style="background-color: #ffd723c5;">
                         <li class="nav-item d-flex justify-content-between mx-2">
                           <a class="nav-link active" aria-current="page" href="#"><p class="text-lg-center "><i class="fa fa-github"></i></p></a>
                         </li>
@@ -83,28 +84,30 @@
 
     
   
-
-    <div class=cover> 
-     <span><p class="text-center cover-text mx-2">Hello World !!<br> MTECH STUDENT NIT AGARTALA </p></span> 
+<!--HOME SECTION-->
+<section id="SEC-HOME">
+    <div class="home-container"> 
+     <span><p class="text-center cover-text mx-2"><span style="color:#FFD523;">Hello World !!</span><br> MTECH STUDENT NIT AGARTALA </p></span> 
       <!-- <img src="assets/cover.jpg" class="img-fluid" alt="..."> -->
     </div>
-
-     
+  
 
     <div class="home" > 
       <div id ="education" class="container-fluid d-flex flex-md-row justify-content-md-between flex-column   mb-1 px-0">
-        <div class=" px-1 mb-2 bd-highlight edu_item "><a href="https://www.w3schools.com"><img src="assets/myself.png" class="img-fluid" alt="ABOUT MYSELF"></a></div>
-        <div class="px-1 mb-2 bd-highlight edu_item "><a href="https://www.w3schools.com"><img src="assets/projects.png" class="img-fluid project" alt="projects"></a></div>      
+        <div class=" px-1 mb-2 bd-highlight  "><a class="item1" href="#SEC-ABOUT" ><img src="assets/about.png" class="img-fluid project" alt="ABOUT MYSELF"><div class="textonimage"><h3>About me</h3></div></a>
+         
+        </div>
+        <div class="px-1 mb-2 bd-highlight  "><a class="item1" href="#SEC-PROJECT"><img src="assets/projects.png" class="img-fluid project" alt="projects"><div class="textonimage"><h3>Projects</h3></div></a></div>      
       </div>
 
       <!--2nd row-->
       <div class="d-flex flex-row bd-highlight justify-content-center">
-          <div class="px-1 d-flex flex-row bd-highlight justify-content-center"><a href="https://www.w3schools.com"><img src="assets/pro.png" class="img-fluid" alt="resume"></a></div>  
-          <div class="px-1 d-flex flex-row bd-highlight justify-content-center "><a href="https://www.w3schools.com"><img src="assets/resume.png" class="img-fluid" alt="EDUCATION"></a></div>
+          <div class="px-1 d-flex flex-row bd-highlight justify-content-center "><a class="item1" href="#SEC-EDUCATION"><img src="assets/educations.png" class="img-fluid " alt="EDUCATION"><div class="textonimage2"><h5>Education</h5></div></a></div>  
+          <div class="px-1 d-flex flex-row bd-highlight justify-content-center "><a class="item1" href="#SEC-SKILL"><img src="assets/skills.png" class="img-fluid" alt="SKILLS"><div class="textonimage2"><h5>Skills</h5></div></a></div>
             
-          <div class=" d-flex flex-column bd-highlight justify-content-center">
-            <div class=" px-1 d-flex flex-row bd-highlight  justify-content-center">
-              <div class="  d-flex flex-row bd-highlight justify-content-center"><a href="https://www.w3schools.com"><img src="assets/github.png" class="img-fluid" alt="github"></a></div>
+          <div class="  d-flex flex-column bd-highlight justify-content-center">
+            <div class=" px-1  d-flex flex-row bd-highlight  justify-content-center">
+              <div class="  d-flex flex-row bd-highlight justify-content-center"><a href="https://www.github.com/arnabdas95/"><img src="assets/github.png" class="img-fluid" alt="github"></a></div>
               <div class="  d-flex flex-row bd-highlight justify-content-center"><a href="https://www.w3schools.com"><img src="assets/linkedin.png" class="img-fluid" alt="linkedin"></a></div>            
             </div>
             <div class=" px-1  d-flex flex-row bd-highlight  justify-content-center">
@@ -115,22 +118,367 @@
         
       </div>
     </div>
-  
+  </section>  
+
+
+
+  <!--about myself section-->
+  <section id="SEC-ABOUT">
+   <div class="about-container">
+     <div class="about-image">
+      <img src="assets/resume.jpg">
+     </div>
+     <div class="about_content">
+       <h1>ABOUT<br></h1>
+       <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quibusdam dolore aliquid laudantium nulla earum sint provident.
+          Iure, inventore. Repellendus, eaque. Voluptates aspernatur commodi sed quisquam nam hic sunt perspiciatis mollitia, rerum aperiam harum aut distinctio quasi necessitatibus possimus, expedita,
+           unde eaque repudiandae maiores! Repudiandae aspernatur deserunt minima eaque quo?<br>
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum architecto, iusto ducimus, voluptatibus  reiciendis obcaecati provident est reiciendis obcaecati provident est  earum maxime totam eius culpa voluptas. Ex odio et numquam necessitatibus rem quis?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima laudantium sapiente vero amet, dolore adipisci nam eos harum consequuntur nemo modi dolor quibusdam incidunt commodi, architecto repellendus maiores? Iusto doloribus quidem delectus eius quibusdam perspiciatis rerum vel dolore, quas, rem architecto alias vero maxime quo iure eligendi sit labore distinctio?
+          </p>
+     </div>
+   </div>
+  </section>
      
 
+   <!--Education myself section-->
+   <section id="SEC-EDUCATION">
+     <div class="education-container">
+     
+    <div class="container">
+      <h1>EDUCATION</h1>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-body">
+                      <div id="content">
+                          <ul class="timeline">
+                              <li class="event" data-date="2021-2023 (Expecte)">
+                                  <h3>MTECH in ARTIFICIAL INTELLIGENCE</h3>
+                                  <p>National Institute of Technology Agartala (NITA), Tripura</p>
+                              </li>
+                              <li class="event" data-date="2017-2019">
+                                  <h3>MSC in COMPUTER SCIENCE</h3>
+                                  <p>Vidyasagar University,Medinipur,West Bengal</p>
+                              </li>
+                              <li class="event" data-date="2014-2017">
+                                  <h3>BSC in COMPUTER SCIENCE</h3>
+                                  <p>Panskura Banamali College, Panskura, West Bengal</p>
+                              </li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+   </section>
+
+
+
+   <section id="SEC-PROJECT">
+     <div class="project-container">
+       <h1>PERSONAL PROJECTS</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/educations.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/educations.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/educations.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/educations.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/educations.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/educations.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </section>
+
+
+
+
+   <section id="SEC-SKILL"> 
+     <div class="skill-container ">
+       <h1>SKILLS</h1>
+      <div class="accordion accordion-flush " id="accordionFlushExample">
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header " id="flush-headingOne">
+            <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+             <h4 >ARTIFICIAL INTELLIGENCE</h4> 
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+              <button class="btn btn-warning" type="button" disabled>Disabled button</button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+            </span></div>
+          </div>
+        </div>
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <h4>MACHINE LEARNING & DEEP LEARNING</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><span class="d-inline-block " tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+              <button class="btn btn-warning" type="button" disabled>Disabled button</button>
+           
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button> 
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button></span></div>
+        </div>
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <h4>WEB TECHNOLOGY</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><span class="d-inline-block " tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+              <button class="btn btn-warning" type="button" disabled>Disabled button</button>
+           
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button> 
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button>
+              <button type="button" disabled class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                Tooltip on left
+              </button></span></div>
+        </div>
+        
+     
+         
+      </div>
+     </div>
+   </section>
+
+  
+<section id="FOOT">
+  <div class="footer">
+    <div class "footer-content" >
+    
+      <ul class="nav d-flex justify-content-center navbar  data-bs-toggle ">
+               <li class="nav-item d-flex justify-content-between mx-1">
+          <a class="nav-link f " aria-current="page" href="#"><p class="text-lg-center "><i class="fa fa-github"></i></p></a>
+        </li>
+        <li class="nav-item  mx-1">
+          <a class="nav-link f"  href="#"><p class="text-lg-center "><i class="fa fa-linkedin"></i></p></a>
+        </li>
+        <li class="nav-item mx-1">
+          <a class="nav-link f"  href="#" ><p class="text-lg-center "><i class="fa fa-instagram"></i></p></a>
+        </li>
+        <li class="nav-item mx-1">
+            <a class="nav-link f"  href="#" ><p class="text-lg-center "> <i class="fa fa-twitter-square"></i></p></a>
+          </li>    
+      </ul>
+     
+   <p>Handcrafted by Arnab Das Year : 2021</p>
+  </div>
+</section>
+  
 
 
 
 
 
 
-    <button
-    type="button"
-    class="btn btn-danger btn-floating btn-lg"
-    id="btn-back-to-top"
-    >
-    <i class="fa fa-arrow-up"></i>
-    </button>
-
+   <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 </html>
+
+
