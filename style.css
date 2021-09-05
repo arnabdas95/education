@@ -20,6 +20,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 
 }
 
@@ -52,7 +53,7 @@ body {
 
 .home{
     display: block;
-    width:50vw;
+    width:60vw;
     height: auto;
     position: relative;   
     left: 50%;
@@ -103,15 +104,6 @@ body {
  
 }
   
-  
-  
-.item1:hover{
-  transform: scale(1.02);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-    
-
 
 /*about section*/
 
@@ -130,7 +122,7 @@ body {
 }
 .about-image img{
   width:110px;
-  height:110px;
+  height:155px;
   float: left;
   padding-top:8px;
   margin-right:10px;
@@ -153,7 +145,7 @@ body {
 
   .about-image img{
     width:300px;
-    height:300px;
+    height:360px;
 }
 .about-content{
  padding:15px;
@@ -186,12 +178,7 @@ body {
   }
 }
 
-.card h3{color:#FFD523}
-.card{
-  background: #303242cc !important;
-  border-bottom:2px solid #ffd7234f !important;
-  color:beige;
-}
+
 .timeline {
     border-left: 3px solid #FFD523;
     border-bottom-right-radius: 4px;
@@ -339,6 +326,12 @@ body {
   }
 }
 
+.card h3{color:#FFD523}
+.card{
+  background: #303242cc !important;
+  border-bottom:2px solid #ffd7234f !important;
+  color:beige;
+}
 
 
 /*skills*/
@@ -379,6 +372,8 @@ body {
   }
 }
 
+
+/* resume */
 
 .resume{
   position: relative;
@@ -427,12 +422,40 @@ body {
 
  }
 
+/* contact */
 
+#SEC-CONTACT{
+  color:#fff;
+  text-align: center;
+  margin-top:100px;
+}
+ .contact{
+  color:#fff;
+  text-align: center;
+  width:100vw;
+  
+  background: rgb(2,7,7);
+  background: linear-gradient(0deg, rgba(2,7,7,1) 35%, rgba(2,7,7,0.5038165608040091) 100%);
+  
+
+ }
  
- 
+.contact-container{
+  padding:20px;
+  width:65vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  
+}
+ @media screen and (max-width: 769px) {
+  .contact{
+    width:91vw;
+    font-size: 12px;;
+  }
+ }
 
-
-
+ /* footer  */
 
 .footer{
   background-color:#020707;   
@@ -440,7 +463,6 @@ body {
   color:#FFD523;
   text-align: center;
   margin: 0 !important;
-  margin-top: 100px !important;
   padding: 0 !important;
   display: flex;
   flex-direction: column;
@@ -475,23 +497,22 @@ body {
   }
 }
 
-
-
+/* [page up btn*/
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 20px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #FFD523; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */ 
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: #FFD523; 
+  color: white;
+  cursor: pointer; 
+  padding: 15px; 
   padding-top:10px;
   padding-bottom: 10px;
-  border-radius: 30%; /* Rounded corners */
+  border-radius: 30%; 
 
 }
 
