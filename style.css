@@ -188,7 +188,8 @@ body {
 
 .card h3{color:#FFD523}
 .card{
-  background: #2c2e4370 !important;
+  background: #303242cc !important;
+  border-bottom:2px solid #ffd7234f !important;
   color:beige;
 }
 .timeline {
