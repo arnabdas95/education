@@ -334,11 +334,17 @@ body {
 
 
 /*skills*/
+
+#SEC-SKILL{
+  color:#fff;
+  text-align: center;
+  margin-top:100px;
+}
 .skill-container{
   background: #2c2e4370;
   color:beige;
   margin:15px;
-  margin-top:100px;
+ 
   padding:20px;
   margin-bottom: 100px;;
 }
@@ -372,6 +378,31 @@ body {
 }
 
 
+/*certificates*/
+.certificate{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 100px;
+  color:#fff;
+  text-align: center;
+  width:65vw !important;
+  
+}
+
+.cer-img {
+  height:43vw !important;
+}
+
+
+@media screen and (max-width: 767px) {
+  .certificate{
+    width:91vw !important;
+  }
+ .cer-img{
+   height:60vw !important;
+ } 
+}
 /* resume */
 
 .resume{
