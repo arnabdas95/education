@@ -1,0 +1,516 @@
+/**
+ * RESET
+ * Reference: http://meyerweb.com/eric/tools/css/reset/
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.618;
+  background-color: black;
+ 
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+code,
+pre,
+samp {
+  font-family: monospace;
+}
+
+/**
+ * BASIC TYPE
+ */
+
+img,
+video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+p:not(:last-child) {
+  margin: 0 0 1em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: .5em 0 .75em;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+/**
+ * BOX HACKING
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5em;
+ margin-top: auto;
+
+ 
+
+}
+
+.masonry-wrapper {
+  padding: 1.5em;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
+
+.masonry {
+  columns: 1;
+  column-gap: 15px;
+}
+
+.masonry-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    columns: 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+}
+
+.masonry-item,
+.masonry-content {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.masonry-item {
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+  transition: filter .25s ease-in-out;
+  border:5px solid rgba(255, 255, 255, 0.836);
+}
+
+.masonry-item:hover {
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .7));
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: #fff;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  z-index: 102;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
+
+.navigation__background {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 4.0rem;
+  right: 4.0rem;
+  background-image: radial-gradient(#000000, #550000);
+  z-index: 100;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__background {
+    top: 3rem;
+    right: 3rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 3.0rem;
+    right: 3.0rem;
+  }
+}
+
+.navigation__nav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 200;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+ 
+}
+
+.navigation__link:link span,
+.navigation__link:visited span {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  background-position: 100%;
+  color: #585858;
+  transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked~.navigation__background {
+  transform: scale(90);
+}
+
+.navigation__checkbox:checked~.navigation__nav {
+  z-index: 101;
+  opacity: 1;
+  width: 100vw;
+}
+
+.navigation__icon {
+  position: relative;
+  margin-top: 1.4rem;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 1rem;
+  height: 1px;
+  background-color: #333;
+  display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.navigation__icon::before {
+  top: -0.5rem;
+}
+
+.navigation__icon::after {
+  top: 0.5rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+  top: 0rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+
+#HIMALAYA,#VIZAC-VIBES,#SAGAR,#LOCAL,#GEAR{
+  margin-top: 100px;
+  PADDING-TOP:40PX;
+}
+.sikkim {
+
+ padding-bottom: 20px;
+ width:100vw;
+}
+
+.describe{
+  text-align: center;
+  width:60vw;
+  position: relative;
+  left:50%;
+  transform: translate(-50%);
+  color:#f6f6f6;
+}
+
+@media only screen and (max-width: 1023px)  {
+  .describe {
+   width:90%;
+  }
+}
+
+.gear{
+  width:65vw;
+  position: relative;
+  left:35%;
+  transform: translate(-28%);
+}
+.gear-content{
+ 
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.camera{
+  margin-top:20px;
+  margin-bottom:20px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.ending{
+  background-color: rgb(94, 1, 1);
+  font-weight:100;
+  font-size: 12px;
+  margin-top:100px;
+  width:100vw;
+  color:whitesmoke;
+  padding: 5px;
+  
+  
+}
+.ending p{
+  padding-top:8px;
+}
