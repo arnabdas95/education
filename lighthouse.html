@@ -25,7 +25,7 @@
     text-align: center !important;
     }
     .outer{
-    background-image:url('assets/rosebckhomedark.jpg');
+    background-image:url('assets/rosebckhomedark1.jpg');
     background-size:cover;
     background-repeat:no-repeat;
     height:100vh;
@@ -167,10 +167,15 @@ overflow:hidden;}
 
   </head>
 
-<body>
+<body onload='myload()'>
   
 
-
+  <div class="loading" id="loading" style="background: #2C2E43 url('assets/icons/book.gif') no-repeat center;height: 100vh;width:100vw ;position:fixed;z-index:9999;text-align: center;color:#fff;">
+  <p style=" position: relative;   
+  top: 55%;
+  transform: translate(-0,50%);">Loading...</p>
+   
+ </div>
   
   
      
@@ -384,70 +389,70 @@ The Gangasagar pilgrimage and fair is the second largest congregation of mankind
         <div class="masonry-wrapper">
             <div class="masonry">
               <div class="masonry-item">
-                <img src="pic/local/1.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/1.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/2.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/2.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/3.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/3.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/4.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/4.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/5.jpeg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/5.jpeg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/6.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/6.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/7.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/7.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/8.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/8.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/9.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/9.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/10.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/10.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/11.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/11.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/12.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/12.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/13.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/13.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/14.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/14.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/15.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/15.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/16.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/16.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/17.jpeg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/17.jpeg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/18.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/18.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/19.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/19.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/20.jpeg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/20.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/21.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/21.jpg" alt="local Image" class="masonry-content">
               </div>
               <div class="masonry-item">
-                <img src="pic/local/22.jpg" alt="Dummy Image" class="masonry-content">
+                <img src="pic/local/22.jpg" alt="local Image" class="masonry-content">
               </div>
              
       
@@ -496,9 +501,7 @@ The Gangasagar pilgrimage and fair is the second largest congregation of mankind
   
   
   <script>
-   function change_category(clicked_id)
-    {var a =clicked_id ;
-    console.log(a)}
+ 
     
     var placeholder= document.getElementById('loading');
         function myload(){
