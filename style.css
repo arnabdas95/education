@@ -13,7 +13,7 @@
 
 body {
   background-color: #000000;
-  background-image: url('assets/leaf.jpg');
+  background-image: url('assets/leaf.jpeg');
 
   background-attachment: fixed;
   background-position: center;
@@ -22,8 +22,12 @@ body {
   
  
 }
-
-
+@media screen and (max-height: 636px) {
+  .index-nav{
+    font-size: 12px;
+  }
+    
+  }
 
 
 /*css for home section */

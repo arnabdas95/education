@@ -451,7 +451,10 @@ html {
 }
 
 
-#HIMALAYA,#VIZAC-VIBES,#SAGAR,#LOCAL,#GEAR{
+#HIMALAYA{
+  padding-top:100px ;
+}
+#VIZAC-VIBES,#SAGAR,#LOCAL,#GEAR{
   margin-top: 100px;
   PADDING-TOP:40PX;
 }
