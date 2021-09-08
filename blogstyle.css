@@ -502,6 +502,15 @@ html {
   justify-items: center;
 }
 
+@media only screen and (max-width:768px)  {
+  .gear-content {
+   width:90vw;
+   transform: translate(-15%);
+  }
+  .gear-content img{
+    width:65vw;
+  }
+}
 
 .ending{
   background-color: rgb(94, 1, 1);
