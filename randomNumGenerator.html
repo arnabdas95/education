@@ -67,16 +67,40 @@ body{
 
 #backBtn{
     position:absolute;
-    top:20px;
-    left:20px;
+    top:18px;
+    right:18px;
+
+    width:36px;
+    height:36px;
+
     border:none;
-    padding:12px 18px;
-    border-radius:15px;
-    background:white;
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(5px);
+
+    color:rgba(255,255,255,0.8);
+
     font-size:1rem;
-    font-weight:bold;
+    font-weight:normal;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     cursor:pointer;
+
     z-index:10;
+
+    transition:all 0.2s ease;
+}
+
+#backBtn:hover{
+    background:rgba(255,255,255,0.25);
+}
+
+#backBtn:active{
+    transform:scale(0.95);
 }
 
 #hint{
@@ -169,7 +193,7 @@ body{
 <div id="game" class="screen">
 
     <button id="backBtn" onclick="goBack()">
-        ⬅ Back
+       x
     </button>
 
     <div id="result"></div>
